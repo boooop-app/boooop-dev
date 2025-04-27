@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center h-screen w-full overflow-hidden">
+    <div className="relative flex flex-col items-center min-h-screen w-full overflow-y-auto bg-white">
       <AnimatePresence mode="wait">
         {!unlocked ? (
           <UnlockSection onUnlock={() => setUnlocked(true)} />
